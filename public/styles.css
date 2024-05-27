@@ -1,0 +1,264 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #850f8d;
+	font-family: poppins;
+	color: #f8f9d7;
+}
+/*
+styling
+main font poppins, secondary font lora
+ #850F8D #C738BD #E49BFF #F8F9D7
+ */
+/* responsive navbar for my resume */
+
+/* navbar style */
+.navbar {
+	overflow: hidden;
+	padding: 30px auto;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+}
+.company {
+	display: flex;
+	align-items: center;
+}
+#profile-pic {
+	height: 3rem;
+	float: left;
+	margin: 0 2rem;
+}
+.navbar h1 {
+	align-self: center;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5rem;
+}
+
+#nav-links {
+	text-decoration: none;
+	list-style: none;
+}
+
+.nav-item {
+	float: inline-start;
+	padding: 2px 30px;
+	font-size: 1.3rem;
+	font-weight: 500;
+	overflow: hidden;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: #f8f9d7;
+}
+
+.nav-item a:hover {
+	color: #e49bff;
+	text-decoration: underline;
+}
+
+/* hero banner style */
+#hero-banner {
+	position: relative;
+	min-height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#hero-banner-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+#hero-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#hero-content h2 {
+	font-size: 5rem;
+	font-weight: 500;
+	margin: 1rem 0;
+	color: #c738bd;
+	text-shadow: 5px 1px 3px #f8f9d7;
+}
+
+#hero-content p {
+	margin: 0;
+	padding: 0;
+	font-size: 3rem;
+	font-family: lora;
+	text-shadow: 5px 1px 3px #850f8d;
+}
+
+/* summary section */
+#summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 5rem auto;
+	width: 80vw;
+	background-color: #f8f9d7;
+	color: #c738bd;
+	text-align: center;
+	border-radius: 2rem;
+	box-shadow: -10px 10px 5px black;
+}
+
+#summary img {
+	height: 10rem;
+	margin-top: 2rem;
+}
+
+#summary h2 {
+	font-weight: 500;
+}
+
+#summary p {
+	font-size: 1rem;
+	padding: 0 10rem;
+}
+
+/* skill section style */
+#skills {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+#skills h2 {
+	font-weight: 500;
+}
+.skill-container {
+	display: flex;
+}
+
+.skill-item {
+	width: 30vw;
+	margin: 1rem;
+	padding: 1rem;
+	border: 3px solid #f8f9d7;
+	border-radius: 20px;
+	float: inline-start;
+}
+.skill-img {
+	float: left;
+	width: 150px;
+	height: 100%;
+	border: none;
+	object-fit: scale-down;
+	border-radius: 20px;
+	margin-right: 1rem;
+}
+.skill-name {
+	margin: 0;
+	padding: 0;
+	text-shadow: 3px 1px 3px gray;
+	text-decoration: underline;
+}
+
+.skill-exp {
+	font-family: lora;
+	font-size: 0.85rem;
+}
+
+/* <!--get in touch--> */
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+#contact > * {
+	margin: 10px auto;
+	width: 80vw;
+	text-align: center;
+}
+
+#btn-contact {
+	width: 100px;
+	height: 45px;
+	border-radius: 4rem;
+	color: #850f8d;
+	font-family: lora;
+	font-weight: 600;
+}
+
+#btn-contact:hover {
+	background-color: #e49bff;
+	color: #f8f9d7;
+}
+
+/* footer */
+footer {
+	text-align: center;
+}
+
+/* resume page */
+.resume {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1rem;
+	font-family: lora;
+}
+.resume h2 {
+	font-family: poppins;
+}
+/* responsive for my resume */
+@media screen and (max-width: 600px) {
+	.company h1 {
+		font-size: 1.2rem;
+	}
+
+	.nav-item {
+		font-size: 1rem;
+		padding: 2px 5px;
+	}
+
+	#profile-pic {
+		margin: 0 10px;
+	}
+
+	#hero-content h2 {
+		font-size: 3rem;
+	}
+
+	#hero-content p {
+		font-size: 1rem;
+	}
+
+	#summary p {
+		padding: 0 1.5rem;
+	}
+	.skill-item {
+		float: none;
+		width: 80vw;
+		height: 40vw;
+	}
+
+	.skill-img {
+		width: 40vw;
+	}
+}
+@media screen and (max-width: 380px) {
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+	}
+}
